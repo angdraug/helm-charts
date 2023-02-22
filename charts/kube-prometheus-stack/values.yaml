@@ -770,6 +770,13 @@ grafana:
 
   adminPassword: prom-operator
 
+  ## Use existing secret instead of the hardcoded password above.
+  ##
+  # admin:
+  #   existingSecret: grafana-admin-secret
+  #   userKey: admin-user
+  #   passwordKey: admin-password
+
   rbac:
     ## If true, Grafana PSPs will be created
     ##
